@@ -11,7 +11,7 @@ img {
     margin-bottom: 1.5rem;
 }
 body {
-  background: url('https://orange.codeberryschool.com/content/images/project-assets/wedding-landing-background.png') repeat center;
+ background: url('https://orange.codeberryschool.com/content/images/project-assets/wedding-landing-background.png') repeat center;
   font-family: 'Libre Baskerville', serif;
   font-size: 1.125rem;
   line-height: 1.5;
@@ -22,11 +22,10 @@ h1,
 h2 {
   font-family: 'Great Vibes', cursive;
 }
-
 h2 {
   font-size: 3rem;
+  text-align:center;
 }
-
 h3 {
   font-size: 1.5rem;
 }
@@ -83,56 +82,121 @@ h1{
   display: table-cell;
   vertical-align: middle;
 }
-.location {
-  display: table;
-  text-align: center;
-  width: 100vw;
-  default text color: #444349 (grey);
-  margin-bottom:1.5rem;
+
+a{
+  color: #bd806e;
 }
-#ceremony #photos #party {
-margin:auto;
+a:hover {
+  color: #eda087;
+  transition: color .15s ease-in-out;
+}
+.loc {
+  width: 95%;
+  margin: 1.5rem auto;
+  padding: .5rem 1rem;
+  text-align: center;
 }
 
+.loc img {
+  height: 7.5rem;
+}
+.loc h3 {
+  font-weight: 700;
+  text-align:center;
+}
+.loc div {
+  font-family: 'Muli', sans-serif;
+}
+.loc::after {
+  content: "";
+  display: block;
+  height: .1875rem;
+  width: 25vw;
+  margin: 1.5rem auto;
+  background-color: #444349;
+}
 .program {
   width: 100vw;
-  text-align:center;
+  text-align: left;
   background: hsla(100,0%,0%,.6);
   color: #d2ba87;
   font-family: 'Muli', sans-serif;
 }
-.program h2{
+.program h2 {
+  font-family: 'Great Vibes', cursive;
+  margin-top: 1rem; /* To account for the unequal margins compared to the previous section. */
   text-align: center;
 }
-.program p{
-  text-align: center;
+.program p {
   font-style: italic;
 }
-.program ul{
+.program ul {
+  letter-spacing: .025rem;
+}
+.gifts {
+  width: 95%;
+  margin: 1.5rem auto;
+  padding: .5rem 1rem;
+  text-align: center;
+}
+.gifts img{
+  height: 7.5rem;
+}
+.gifts p:last-child {  
+  margin-bottom: 0;
+}
+.faq {
+  background: hsla(100,0%,0%,.6);
+  color: #d2ba87;
+  width: 100vw;
+  text-align: center;
+}
+
+.faq h2 {
+  margin-top: 1rem; 
+}
+.faq p {
+  font-family: 'Muli', sans-serif;
   text-align: left;
 }
-.gifts{
-  text-align: center;
-  width: 100vw;
-  text color: #444349 (grey); 
-  margin-bottom:1.5rem; 
-}
-.questionsanswer{
-  display:block;
-  text-align:left;
-  font-family: 'Muli', sans-serif;
-  background: hsla(100,0%,0%,.6);
+.q::after {
+  content: "";
+  display: block;
+  height: .1875rem;
+  width: 50vw;
   margin: 1.5rem auto;
-  color: #d2ba87;
+  background-color: #d2ba87;
 }
-.question{
+.question {
+  font-weight: 700;
   margin-bottom: .5rem;
-  font-weight:700;
 }
-.answer{
+.answer {
   margin-bottom: 1.5rem;
 }
+.contact{
+  width: 95%;
+  margin: 1.5rem auto;
+  padding: .5rem 1rem;
+  text-align: center;
+}
 .footer {
+  height: 10vh;
+  width: 100vw;
+  background-color: #606060;
+  color: #fff;
+  font-family: 'Muli', sans-serif;
+  display: table;
+  text-align: center;
+  font-size: .875rem;
+}
+.footer-wrapper {
+  display: table-cell;
+  vertical-align: middle;
+  padding: .5rem 1rem;
+}
+footer p {
+  margin-bottom: 0;
   height:8rem;
   line-height:8rem;
   color: rgba(255,255,255, 1);
@@ -140,14 +204,4 @@ margin:auto;
   font-size: 1rem;
   text-align:center;
   background: #606060;
-}
-.contact{
-  text-align:center;
-}
-a{
-  color: #bd806e;
-}
-a:hover {
-  color: #eda087;
-  transition: color .15s ease-in-out;
 }
