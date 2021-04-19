@@ -47,11 +47,8 @@ h3 {
   background: hsla(100,0%,0%,.5);
 }
 .headline {
-  
-  text-transform:uppercase;
-  font-size:1.5rem;
- 
-}
+    font-size:2rem;
+ }
 .headline::after {
   display: block;
   content: "";
@@ -100,6 +97,9 @@ a:hover {
 .loc img {
   height: 7.5rem;
 }
+.loc h2{
+ 
+}
 .loc h3 {
   font-weight: 700;
   text-align:center;
@@ -124,8 +124,9 @@ a:hover {
 }
 .program h2 {
   font-family: 'Great Vibes', cursive;
-  margin-top: 1rem; /* To account for the unequal margins compared to the previous section. */
+  margin-top: 1rem; 
   text-align: center;
+  padding:1rem;
 }
 .program p {
   font-style: italic;
@@ -204,4 +205,42 @@ footer p {
   font-size: 1rem;
   text-align:center;
   background: #606060;
+}
+@media (min-width: 768px) {
+  .headline{
+   text-transform:uppercase;
+  } 
+  .text{
+    padding: 1.25rem;
+    border-radius: 4px;
+    width:50%;
+  }
+   .headline h1˙{
+    font-size:7rem 
+  }
+  .loc{
+    display: inline-block;
+    width: 30%;
+    padding: 1.5rem;
+    margin: .5rem;
+  }
+  .loc::after {
+    display: none;
+  }
+  .prg{
+    width: 30vw;
+    margin: 0 auto;
+      }
+  .q {
+    display: inline-block;
+    width: 30%;
+    vertical-align: top;
+    padding: 1.5rem;
+    margin: .5rem;
+  }
+ .q::after {
+   display: none;
+  }
+ .footer {
+    min-height: 7vh; 
 }
